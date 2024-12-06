@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-06T10:27:35 IST" name="TestNG Suite1" finished-at="2024-12-06T10:28:41 IST" duration-ms="66104">
+    <groups>
+    </groups>
+    <test started-at="2024-12-06T10:27:35 IST" name="Facebook Login" finished-at="2024-12-06T10:28:18 IST" duration-ms="43112">
+      <class name="testcases.FBLogin">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:35 IST" name="launchBrowser" finished-at="2024-12-06T10:27:42 IST" duration-ms="6834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:42 IST" name="doLogin" data-provider="data" finished-at="2024-12-06T10:27:44 IST" duration-ms="2542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:44 IST" name="tearDown" finished-at="2024-12-06T10:27:45 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:45 IST" name="launchBrowser" finished-at="2024-12-06T10:27:52 IST" duration-ms="6834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:52 IST" name="doLogin" data-provider="data" finished-at="2024-12-06T10:27:53 IST" duration-ms="857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:53 IST" name="tearDown" finished-at="2024-12-06T10:27:53 IST" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:27:53 IST" name="launchBrowser" finished-at="2024-12-06T10:28:01 IST" duration-ms="7118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:01 IST" name="doLogin" data-provider="data" finished-at="2024-12-06T10:28:01 IST" duration-ms="840" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:01 IST" name="tearDown" finished-at="2024-12-06T10:28:02 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:02 IST" name="launchBrowser" finished-at="2024-12-06T10:28:09 IST" duration-ms="6892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:09 IST" name="doLogin" data-provider="data" finished-at="2024-12-06T10:28:10 IST" duration-ms="847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:10 IST" name="tearDown" finished-at="2024-12-06T10:28:10 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:10 IST" name="launchBrowser" finished-at="2024-12-06T10:28:17 IST" duration-ms="6471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:17 IST" name="doLogin" data-provider="data" finished-at="2024-12-06T10:28:18 IST" duration-ms="888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[selenium2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[java2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBLogin@63c5efee]" started-at="2024-12-06T10:28:18 IST" name="tearDown" finished-at="2024-12-06T10:28:18 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.FBLogin -->
+    </test> <!-- Facebook Login -->
+    <test started-at="2024-12-06T10:28:19 IST" name="Facebook User Reg" finished-at="2024-12-06T10:28:41 IST" duration-ms="21908">
+      <class name="testcases.FBUserReg">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:27:35 IST" name="setUp" finished-at="2024-12-06T10:27:35 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:19 IST" name="launchBrowser" finished-at="2024-12-06T10:28:26 IST" duration-ms="6607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doUserReg(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:26 IST" name="doUserReg" data-provider="data" finished-at="2024-12-06T10:28:26 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Soumya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[s]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserReg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:26 IST" name="tearDown" finished-at="2024-12-06T10:28:26 IST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:26 IST" name="launchBrowser" finished-at="2024-12-06T10:28:33 IST" duration-ms="6937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doUserReg(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:33 IST" name="doUserReg" data-provider="data" finished-at="2024-12-06T10:28:33 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhagya]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pune]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserReg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:33 IST" name="tearDown" finished-at="2024-12-06T10:28:34 IST" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:34 IST" name="launchBrowser" finished-at="2024-12-06T10:28:41 IST" duration-ms="6901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="doUserReg(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:41 IST" name="doUserReg" data-provider="data" finished-at="2024-12-06T10:28:41 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[v]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mumbai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doUserReg -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.FBUserReg@5c48c0c0]" started-at="2024-12-06T10:28:41 IST" name="tearDown" finished-at="2024-12-06T10:28:41 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.FBUserReg -->
+    </test> <!-- Facebook User Reg -->
+  </suite> <!-- TestNG Suite1 -->
+</testng-results>

@@ -1,0 +1,60 @@
+INFO    2024-12-06 10:27:35,416 [main] base.BaseTest  - Test Execution started
+INFO    2024-12-06 10:27:35,419 [main] base.BaseTest  - Config file loaded
+INFO    2024-12-06 10:27:35,419 [main] base.BaseTest  - OR properties file loaded
+INFO    2024-12-06 10:27:41,494 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:27:41,711 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:27:42,336 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:27:44,317 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : username1
+INFO    2024-12-06 10:27:44,828 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : password1
+ERROR   2024-12-06 10:27:44,880 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
+ERROR   2024-12-06 10:27:44,880 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
+INFO    2024-12-06 10:27:44,880 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
+INFO    2024-12-06 10:27:45,470 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:27:50,203 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:27:50,422 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:27:52,306 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:27:52,737 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : username2
+INFO    2024-12-06 10:27:53,113 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : password2
+ERROR   2024-12-06 10:27:53,162 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
+ERROR   2024-12-06 10:27:53,163 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
+INFO    2024-12-06 10:27:53,163 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
+INFO    2024-12-06 10:27:53,895 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:27:58,531 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:27:58,750 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:28:01,014 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:28:01,434 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : username3
+INFO    2024-12-06 10:28:01,822 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : password3
+ERROR   2024-12-06 10:28:01,855 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
+ERROR   2024-12-06 10:28:01,855 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
+INFO    2024-12-06 10:28:01,855 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
+INFO    2024-12-06 10:28:02,598 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:28:07,278 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:28:07,456 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:28:09,490 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:28:09,834 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : selenium1
+INFO    2024-12-06 10:28:10,267 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : java1
+ERROR   2024-12-06 10:28:10,338 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
+ERROR   2024-12-06 10:28:10,338 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
+INFO    2024-12-06 10:28:10,338 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
+INFO    2024-12-06 10:28:10,831 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:28:15,462 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:28:15,600 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:28:17,304 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:28:17,742 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : selenium2
+INFO    2024-12-06 10:28:18,112 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : java2
+ERROR   2024-12-06 10:28:18,190 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
+ERROR   2024-12-06 10:28:18,190 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
+INFO    2024-12-06 10:28:18,190 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
+INFO    2024-12-06 10:28:18,529 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:28:24,138 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:28:24,313 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:28:26,232 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:28:26,521 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:28:31,322 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:28:31,492 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:28:33,460 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:28:34,190 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-06 10:28:38,791 [main] base.BaseTest  - Edge browser is launched
+INFO    2024-12-06 10:28:38,957 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-06 10:28:41,092 [main] base.BaseTest  - Navigated to an url: https://facebook.com
+INFO    2024-12-06 10:28:41,525 [main] base.BaseTest  - Execution Stopped
