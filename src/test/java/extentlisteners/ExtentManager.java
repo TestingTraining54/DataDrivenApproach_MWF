@@ -13,6 +13,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import base.BaseTest;
+
 //import base.BaseTest;
 
 
@@ -45,7 +47,7 @@ public class ExtentManager {
 	    }
 
 	
-	  /*  
+	  
 		public static void captureScreenshot() throws IOException {
 			
 			Date d = new Date();
@@ -53,7 +55,7 @@ public class ExtentManager {
 
 			
 			
-		/*File screeshot = ((TakesScreenshot)  BaseTest.driver).getScreenshotAs(OutputType.FILE);
+		File screeshot = ((TakesScreenshot)  BaseTest.driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(screeshot, new File(".//reports//"+fileName));
 		}
 		
@@ -69,7 +71,7 @@ public class ExtentManager {
 			File screeshot = ((TakesScreenshot) element).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(screeshot, new File(".//screenshot//"+"Element_"+fileName));
 		}
-*/
+
 	 
 
 

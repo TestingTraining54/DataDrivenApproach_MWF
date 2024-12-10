@@ -8,21 +8,31 @@
 <listener class-name="extentlisteners.ExtentListeners"></listener>
 </listeners>
 
-  <test name="Facebook Login">
+  <test name="Bank Login">
     <classes>
      
-      <class name="testcases.FBLogin"/>
+      <class name="testcases.HomeTest"/>
        
     </classes>
   </test>
   
-  <test name="Facebook User Reg">
+    <test name="Add Customer">
     <classes>
      
-      <class name="testcases.FBUserReg"/>
+      <class name="testcases.addCustomerTest"/>
        
     </classes>
   </test>
+  
+  <test name="Add Account">
+    <classes>
+     
+      <class name="testcases.OpenAccount"/>
+       
+    </classes>
+  </test>
+  
+  
   
   
 </suite> <!-- TestNG Suite1 -->

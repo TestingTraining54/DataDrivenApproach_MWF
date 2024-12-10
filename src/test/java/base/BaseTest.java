@@ -13,9 +13,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import extentlisteners.ExtentListeners;
@@ -24,38 +24,17 @@ import utility.ExcelReader;
 
 public class BaseTest {
 
-	/*WebDriver
-	 * Implicit Wait
-	 * Explicit Wait
-	 * Excel Reader
-	 * Log4j
-	 * TestNG
-	 * DBConnection
-	 * Properties
-	 * screenshot
-	 * keyword - type/click/select
-	 * Extent Reports
+	/*
+	 * WebDriver Implicit Wait Explicit Wait Excel Reader Log4j TestNG DBConnection
+	 * Properties screenshot keyword - type/click/select Extent Reports
 	 * 
-	 * Sequential 
-	 * Browser Opened
-	 * Testcase1
-	 * Testcase2
-	 * Testcase3
-	 * Close browser
+	 * Sequential Browser Opened Testcase1 Testcase2 Testcase3 Close browser
 	 * 
-	 * End-To-End
-	 * Browser Opened
-	 * Testcase1
-	 * Close browser
-	 * Browser Opened
-	 * Testcase2
-	 * Close browser
-	 * Browser Opened
-	 * Testcase3
-	 * Close browser
+	 * End-To-End Browser Opened Testcase1 Close browser Browser Opened Testcase2
+	 * Close browser Browser Opened Testcase3 Close browser
 	 * 
 	 */
-	
+
 	public static WebDriver driver;
 	public static ExcelReader excel = new ExcelReader("./src/test/resources/data/testData.xlsx");
 	public static FileInputStream fis;
@@ -64,91 +43,96 @@ public class BaseTest {
 	public static Logger log = Logger.getLogger(BaseTest.class);
 	public static WebDriverWait wait;
 	public static DbManager dbManager = new DbManager();
-	
+
 	@BeforeSuite
 	public void setUp() {
 		PropertyConfigurator.configure("./src/test/resources/properties/log4j.properties");
 		log.info("Test Execution started");
-		
+
 		try {
 			fis = new FileInputStream("./src/test/resources/properties/config.properties");
 			config.load(fis);
 			log.info("Config file loaded");
-		}  
-		
+		}
+
 		catch (IOException e) {
 			System.out.println("File is not Found: " + e.getMessage());
 			log.info(e.getMessage());
 		}
-		
+
 		try {
 			fis = new FileInputStream("./src/test/resources/properties/or.properties");
 			or.load(fis);
 			log.info("OR properties file loaded");
-		}  
-		
+		}
+
 		catch (IOException e) {
 			System.out.println("File is not Found: " + e.getMessage());
 			log.info(e.getMessage());
 		}
-	}
-	@BeforeMethod
-	public void launchBrowser() {
-		if(config.getProperty("browser").equalsIgnoreCase("chrome")) {
-			driver=new ChromeDriver();
+
+		if (config.getProperty("browser").equalsIgnoreCase("chrome")) {
+			driver = new ChromeDriver();
 			log.info("Chrome browser is launched");
 		}
-		
-		else if(config.getProperty("browser").equalsIgnoreCase("firefox")) {
-			driver=new FirefoxDriver();
+
+		else if (config.getProperty("browser").equalsIgnoreCase("firefox")) {
+			driver = new FirefoxDriver();
 			log.info("Firefox browser is launched");
 		}
-		
-		else if(config.getProperty("browser").equalsIgnoreCase("edge")) {
-			driver=new EdgeDriver();
+
+		else if (config.getProperty("browser").equalsIgnoreCase("edge")) {
+			driver = new EdgeDriver();
 			log.info("Edge browser is launched");
 		}
-		
+
 		wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(config.getProperty("explicit.wait"))));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
+		driver.manage().timeouts()
+				.implicitlyWait(Duration.ofSeconds(Integer.parseInt(config.getProperty("implicit.wait"))));
 		driver.manage().window().maximize();
 		log.info("Browser window maximized");
-		
+
 		driver.get(config.getProperty("testsiteurl"));
 		log.info("Navigated to an url: " + config.getProperty("testsiteurl"));
-			
+
 	}
-	
-	
-	
+
 	public static WebElement getWebElement(String keyword) {
 		WebElement ele = null;
-		if(keyword.endsWith("_ID")) {
-			ele=driver.findElement(By.id(or.getProperty(keyword)));
-		}
-		else if(keyword.endsWith("_NAME")) {
-			driver.findElement(By.name(or.getProperty(keyword)));
-		}
-		else if(keyword.endsWith("_CSS")) {
-			driver.findElement(By.cssSelector(or.getProperty(keyword)));
-		}
-		else if(keyword.endsWith("_XPATH")) {
-			driver.findElement(By.xpath(or.getProperty(keyword)));
-		}
-		else if(keyword.endsWith("_CLASS")) {
-			driver.findElement(By.className(or.getProperty(keyword)));
+		if (keyword.endsWith("_ID")) {
+			ele = driver.findElement(By.id(or.getProperty(keyword)));
+		} else if (keyword.endsWith("_NAME")) {
+			ele = driver.findElement(By.name(or.getProperty(keyword)));
+		} else if (keyword.endsWith("_CSS")) {
+			ele = driver.findElement(By.cssSelector(or.getProperty(keyword)));
+		} else if (keyword.endsWith("_XPATH")) {
+			ele = driver.findElement(By.xpath(or.getProperty(keyword)));
+		} else if (keyword.endsWith("_CLASS")) {
+			ele = driver.findElement(By.className(or.getProperty(keyword)));
 		}
 		return ele;
 	}
 
+	public boolean isElementPresent(String keyword) {
 
-	//type/click/select
-	public static void type(String keyword,String value) {
 		try {
-		getWebElement(keyword).clear();
-		getWebElement(keyword).sendKeys(value);
+			getWebElement(keyword);
+			return true;
+		} catch (Exception e) {
+			log.error(e.getMessage());
+			log.error("Unable to locate the element " + keyword);
+			ExtentListeners.test.fail(e.getMessage());
+			// Assert.fail(e.getMessage());
+			return false;
 		}
-		catch (Exception e) {
+	}
+
+	// type/click/select
+	public static void type(String keyword, String value) {
+		try {
+			getWebElement(keyword).clear();
+			getWebElement(keyword).sendKeys(value);
+		} catch (Exception e) {
 			log.error("Element is not found - unable to type on element with keyword: " + keyword);
 			log.error(e.getMessage());
 		}
@@ -159,20 +143,37 @@ public class BaseTest {
 	public static void click(String keyword) {
 		try {
 			getWebElement(keyword).click();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 			log.error("Unable to click on element with keyword: " + keyword);
 			log.error(e.getMessage());
 		}
 		log.info("Clicked on field with a keyword as : " + keyword);
+		ExtentListeners.test.info("Clicked on field with a keyword as : " + keyword);
 	}
-	
-	
-	@AfterMethod
+
+	public static void selectElement(String keyword, String value) {
+		WebElement ele;
+		try {
+		ele = getWebElement(keyword);
+		Select s1 = new Select(ele);
+		s1.selectByVisibleText(value);
+		}
+		catch (Exception e) {
+			log.error("Unable to Select on element with keyword: " + keyword);
+			log.error(e.getMessage());
+			
+		}
+		
+		ExtentListeners.test.info("Selected the dropdown with keyword as: " +keyword +" with value as:" + value);
+		log.info("Selected the dropdown with keyword as: " +keyword +" with value as:" + value);
+		
+		
+	}
+
+	@AfterSuite
 	public void tearDown() {
 		driver.close();
 		log.info("Execution Stopped");
 	}
-	
-	
+
 }

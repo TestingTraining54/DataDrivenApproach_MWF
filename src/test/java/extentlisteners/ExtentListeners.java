@@ -57,10 +57,14 @@ public class ExtentListeners implements ITestListener, ISuiteListener {
 		
 
 		test.fail(result.getThrowable().getMessage());
-		/*
-		 * try { //ExtentManager.captureScreenshot(); } catch (IOException e) { // TODO
-		 * Auto-generated catch block e.printStackTrace(); }
-		 */
+		
+		try { 
+			ExtentManager.captureScreenshot();
+			} 
+		
+			catch (IOException e) { // TODO
+				e.printStackTrace(); }
+		
 		String methodName=result.getMethod().getMethodName();
 		String logText="<b>"+"TEST CASE:- "+ methodName.toUpperCase()+ " FAILED"+"</b>";		
 	

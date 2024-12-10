@@ -1,60 +1,35 @@
-INFO    2024-12-06 10:27:35,416 [main] base.BaseTest  - Test Execution started
-INFO    2024-12-06 10:27:35,419 [main] base.BaseTest  - Config file loaded
-INFO    2024-12-06 10:27:35,419 [main] base.BaseTest  - OR properties file loaded
-INFO    2024-12-06 10:27:41,494 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:27:41,711 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:27:42,336 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:27:44,317 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : username1
-INFO    2024-12-06 10:27:44,828 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : password1
-ERROR   2024-12-06 10:27:44,880 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
-ERROR   2024-12-06 10:27:44,880 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
-INFO    2024-12-06 10:27:44,880 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
-INFO    2024-12-06 10:27:45,470 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:27:50,203 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:27:50,422 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:27:52,306 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:27:52,737 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : username2
-INFO    2024-12-06 10:27:53,113 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : password2
-ERROR   2024-12-06 10:27:53,162 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
-ERROR   2024-12-06 10:27:53,163 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
-INFO    2024-12-06 10:27:53,163 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
-INFO    2024-12-06 10:27:53,895 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:27:58,531 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:27:58,750 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:28:01,014 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:28:01,434 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : username3
-INFO    2024-12-06 10:28:01,822 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : password3
-ERROR   2024-12-06 10:28:01,855 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
-ERROR   2024-12-06 10:28:01,855 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
-INFO    2024-12-06 10:28:01,855 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
-INFO    2024-12-06 10:28:02,598 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:28:07,278 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:28:07,456 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:28:09,490 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:28:09,834 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : selenium1
-INFO    2024-12-06 10:28:10,267 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : java1
-ERROR   2024-12-06 10:28:10,338 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
-ERROR   2024-12-06 10:28:10,338 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
-INFO    2024-12-06 10:28:10,338 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
-INFO    2024-12-06 10:28:10,831 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:28:15,462 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:28:15,600 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:28:17,304 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:28:17,742 [main] base.BaseTest  - Typed on field with a keyword as : email_ID with  a value as : selenium2
-INFO    2024-12-06 10:28:18,112 [main] base.BaseTest  - Typed on field with a keyword as : pass_ID with  a value as : java2
-ERROR   2024-12-06 10:28:18,190 [main] base.BaseTest  - Unable to click on element with keyword: loginBtn_XPATH
-ERROR   2024-12-06 10:28:18,190 [main] base.BaseTest  - Cannot invoke "org.openqa.selenium.WebElement.click()" because the return value of "base.BaseTest.getWebElement(String)" is null
-INFO    2024-12-06 10:28:18,190 [main] base.BaseTest  - Clicked on field with a keyword as : loginBtn_XPATH
-INFO    2024-12-06 10:28:18,529 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:28:24,138 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:28:24,313 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:28:26,232 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:28:26,521 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:28:31,322 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:28:31,492 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:28:33,460 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:28:34,190 [main] base.BaseTest  - Execution Stopped
-INFO    2024-12-06 10:28:38,791 [main] base.BaseTest  - Edge browser is launched
-INFO    2024-12-06 10:28:38,957 [main] base.BaseTest  - Browser window maximized
-INFO    2024-12-06 10:28:41,092 [main] base.BaseTest  - Navigated to an url: https://facebook.com
-INFO    2024-12-06 10:28:41,525 [main] base.BaseTest  - Execution Stopped
+INFO    2024-12-10 10:27:05,257 [main] base.BaseTest  - Test Execution started
+INFO    2024-12-10 10:27:05,258 [main] base.BaseTest  - Config file loaded
+INFO    2024-12-10 10:27:05,258 [main] base.BaseTest  - OR properties file loaded
+INFO    2024-12-10 10:27:08,010 [main] base.BaseTest  - Chrome browser is launched
+INFO    2024-12-10 10:27:08,091 [main] base.BaseTest  - Browser window maximized
+INFO    2024-12-10 10:27:09,140 [main] base.BaseTest  - Navigated to an url: https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login
+INFO    2024-12-10 10:27:09,796 [main] base.BaseTest  - Clicked on field with a keyword as : bankMgrLoginBtn_XPATH
+INFO    2024-12-10 10:27:10,705 [main] base.BaseTest  - Clicked on field with a keyword as : addCustmr_XPATH
+INFO    2024-12-10 10:27:11,239 [main] base.BaseTest  - Typed on field with a keyword as : firstNameTxtbox_XPATH with  a value as : rahul
+INFO    2024-12-10 10:27:11,394 [main] base.BaseTest  - Typed on field with a keyword as : lastNameTxtbox_XPATH with  a value as : arr
+INFO    2024-12-10 10:27:11,574 [main] base.BaseTest  - Typed on field with a keyword as : postalCode_XPATH with  a value as : 345678.0
+INFO    2024-12-10 10:27:11,714 [main] base.BaseTest  - Clicked on field with a keyword as : addCutomer_XPATH
+INFO    2024-12-10 10:27:11,882 [main] base.BaseTest  - Clicked on field with a keyword as : addCustmr_XPATH
+INFO    2024-12-10 10:27:12,087 [main] base.BaseTest  - Typed on field with a keyword as : firstNameTxtbox_XPATH with  a value as : rahul1
+INFO    2024-12-10 10:27:12,260 [main] base.BaseTest  - Typed on field with a keyword as : lastNameTxtbox_XPATH with  a value as : arr1
+INFO    2024-12-10 10:27:12,459 [main] base.BaseTest  - Typed on field with a keyword as : postalCode_XPATH with  a value as : 23343.0
+INFO    2024-12-10 10:27:12,583 [main] base.BaseTest  - Clicked on field with a keyword as : addCutomer_XPATH
+INFO    2024-12-10 10:27:12,739 [main] base.BaseTest  - Clicked on field with a keyword as : addCustmr_XPATH
+INFO    2024-12-10 10:27:12,978 [main] base.BaseTest  - Typed on field with a keyword as : firstNameTxtbox_XPATH with  a value as : selenium
+INFO    2024-12-10 10:27:13,187 [main] base.BaseTest  - Typed on field with a keyword as : lastNameTxtbox_XPATH with  a value as : java
+INFO    2024-12-10 10:27:13,462 [main] base.BaseTest  - Typed on field with a keyword as : postalCode_XPATH with  a value as : 586538.0
+INFO    2024-12-10 10:27:13,584 [main] base.BaseTest  - Clicked on field with a keyword as : addCutomer_XPATH
+INFO    2024-12-10 10:27:13,825 [main] base.BaseTest  - Clicked on field with a keyword as : openAccountBtn_XPATH
+INFO    2024-12-10 10:27:14,269 [main] base.BaseTest  - Selected the dropdown with keyword as: customer_ID with value as:rahul arr
+INFO    2024-12-10 10:27:14,385 [main] base.BaseTest  - Selected the dropdown with keyword as: currency_ID with value as:Pound
+INFO    2024-12-10 10:27:14,531 [main] base.BaseTest  - Clicked on field with a keyword as : processBtn_XPATH
+INFO    2024-12-10 10:27:14,686 [main] base.BaseTest  - Clicked on field with a keyword as : openAccountBtn_XPATH
+INFO    2024-12-10 10:27:14,808 [main] base.BaseTest  - Selected the dropdown with keyword as: customer_ID with value as:rahul1 arr1
+INFO    2024-12-10 10:27:14,977 [main] base.BaseTest  - Selected the dropdown with keyword as: currency_ID with value as:Dollar
+INFO    2024-12-10 10:27:15,121 [main] base.BaseTest  - Clicked on field with a keyword as : processBtn_XPATH
+INFO    2024-12-10 10:27:15,323 [main] base.BaseTest  - Clicked on field with a keyword as : openAccountBtn_XPATH
+INFO    2024-12-10 10:27:15,490 [main] base.BaseTest  - Selected the dropdown with keyword as: customer_ID with value as:selenium java
+INFO    2024-12-10 10:27:15,668 [main] base.BaseTest  - Selected the dropdown with keyword as: currency_ID with value as:Rupee
+INFO    2024-12-10 10:27:15,798 [main] base.BaseTest  - Clicked on field with a keyword as : processBtn_XPATH
+INFO    2024-12-10 10:27:16,087 [main] base.BaseTest  - Execution Stopped
